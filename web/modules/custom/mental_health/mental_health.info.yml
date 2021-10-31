@@ -1,0 +1,8 @@
+name: Mental Health
+type: module
+description: 'Mental Health'
+core_version_requirement: ^8 || ^9
+package: Mental Health
+dependencies:
+  - node
+  - user

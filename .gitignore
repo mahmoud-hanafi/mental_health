@@ -1,0 +1,11 @@
+/vendor
+/web/core
+/web/modules/contrib
+sites/*/settings*.php
+sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+sites/*/private
+
+# Ignore SimpleTest multi-site environment.
+sites/simpletest

@@ -1,0 +1,128 @@
+{#
+/**
+ * @file
+ *
+ * Default theme implementation for profiles.
+ *
+ * Available variables:
+ * - content: Items for the content of the profile.
+ *   Use 'content' to print them all, or print a subset such as
+ *   'content.title'. Use the following code to exclude the
+ *   printing of a given child element:
+ *   @code
+ *   {{ content|without('title') }}
+ *   @endcode
+ * - attributes: HTML attributes for the wrapper.
+ * - view_mode: The profile view mode used.
+ * - profile: The profile object.
+ * - url: The profile URL, if available.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+  'profile',
+  'profile--' ~ profile.id,
+  'profile--type--' ~ profile.bundle|clean_class,
+  profile.isDefault() ? 'profile--is-default',
+  view_mode ? 'profile--view-mode--' ~ view_mode|clean_class,
+  'clearfix',
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_suffix.contextual_links }}
+  <div class="doctor-profile">
+    <div class="doctor-img">
+    {{content.field_picture}}
+    </div>
+    <div class="doctor-info">
+      <div class="personal-information">
+        <div class="doctor-info-row">
+          <span>Full Name</span>
+          {% if content.field_full_name %}
+          <span>{{content.field_full_name}}</span>
+          {% else %}
+          <span>N/A</span>
+          {% endif %}
+        </div>
+        <div class="doctor-info-row">
+          <span>Date of birth</span>
+          {% if content.field_date_of_birth %}
+          <span>{{content.field_date_of_birth}}</span>
+          {% else %}
+          <span>N/A</span>
+          {% endif %}
+        </div>
+        <div class="doctor-info-row">
+          <span>Location</span>
+          {% if content.field_hospital %}
+          <span>{{content.field_hospital}}</span>
+          {% else %}
+          <span>N/A</span>
+          {% endif %}
+        </div>
+        <div class="doctor-info-row">
+          <span>Employment</span>
+         {% if content.field_employmnet %}
+          <span>{{content.field_employmnet}}</span>
+          {% else %}
+          <span>N/A</span>
+          {% endif %}
+         </div>
+         <div class="doctor-info-row">
+            <span>ُEducation</span>
+          {% if content.field_education %}
+          <span>{{content.field_education}}</span>
+          {% else %}
+          <span>N/A</span>
+          {% endif %}
+          </div>
+          <div class="doctor-info-row">
+            <span>Achievements and Activities</span>
+            {% if content.field_education %}
+          <span>{{content.field_education}}</span>
+          {% else %}
+          <span>N/A</span>
+          {% endif %}
+          </div>
+        </div>
+        <div class="education-activities">
+        </div>
+        <div class="work-and-experince">
+            <div class="doctor-info-row">
+                <div class="doctor-lg-sec">
+                    <p class="doctor-lg-header">Work and clinical experince</p>
+                    {% if content.field_work_clinical_experience %}
+                    <span>{{content.field_work_clinical_experience}}</span>
+                    {% else %}
+                    <span>N/A</span>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="doctor-info-row">
+                <div class="doctor-lg-sec">
+                    <p class="doctor-lg-header">Area of experince</p>
+                    {% if content.field_area_of_experience %}
+                    <span>{{content.field_area_of_experience}}</span>
+                    {% else %}
+                    <span>N/A</span>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="doctor-info-row">
+                <div class="doctor-lg-sec">
+                    <p class="doctor-lg-header">Qualifications and experince</p>
+                    {% if content.field_qualifications %}
+                    <span>{{content.field_qualifications}}</span>
+                    {% else %}
+                    <span>N/A</span>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

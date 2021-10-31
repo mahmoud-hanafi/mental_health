@@ -1,0 +1,16 @@
+mental_health.zoom_meeting:
+  path: '/zoom-meeting'
+  defaults:
+    _controller: Drupal\mental_health\Controller\ZoomController::createMeeting
+    _title: 'Create zoom meeting'
+  requirements:
+    _permission: 'access content'
+
+
+mental_health.conform:
+  path: '/confirm/form'
+  defaults:
+    _form: Drupal\mental_health\Form\Confirm
+    _title: 'Confirmation Form'
+  requirements:
+    _permission: 'access content'

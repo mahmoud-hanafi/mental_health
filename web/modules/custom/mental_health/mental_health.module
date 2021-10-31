@@ -1,0 +1,112 @@
+<?php
+
+use Drupal\Core\Form\FormBase;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Component\Utility\UrlHelper;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Url;
+use Drupal\file\Entity\File;
+use Drupal\media\Entity\Media;
+use Drupal\field\Entity\FieldConfig;
+use Drupal\webform\Utility\WebformFormHelper;
+use \Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Routing\TrustedRedirectResponse;
+use \Drupal\user\Entity\User;
+use Drupal\Core\DrupalKernel;
+use Symfony\Component\HttpFoundation\Request;
+
+
+/**
+* Implements hook_theme().
+*/
+
+function mental_health_theme($existing, $type, $theme, $path) {
+        return [
+            'confirm_zoom' => [
+                'variables' => [
+                    'meeting_link' => '',
+                ],
+            ],
+        ];
+}
+
+
+
+function mental_health_entity_insert(Drupal\Core\Entity\EntityInterface $entity) {
+    
+    if($entity->getEntityTypeId() == 'user'){
+        $uid = $entity->uid->value;
+        $roles = $entity->getRoles();
+        if(in_array('patient',$roles)){
+            //$user = Drupal\user\Entity\User::load($uid);
+            //user_login_finalize($user);
+            $redirect = new RedirectResponse(Url::fromUri("internal:/form/patient-questionner")->toString()); 
+            $redirect->send();
+        }
+        else{
+            $redirect = new RedirectResponse(Url::fromUri("internal:/user/$uid/doctor_profile")->toString());
+            $redirect->send();
+        }
+    }
+}
+
+
+function mental_health_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    if($form_id === 'webform_submission_patient_questionner_add_form' ){
+        $form['actions']['submit']['#submit'][] = 'mental_survey_submit_handler';
+    }
+}
+
+
+function mental_survey_submit_handler($form, \Drupal\Core\Form\FormStateInterface $form_state){
+    // values of category 1
+    $q1 = $form['elements']['category_1']['q1']['#value'];
+    $q2 = $form['elements']['category_1']['q2']['#value'];
+    $q3 = $form['elements']['category_1']['q3']['#value'];
+    $q4 = $form['elements']['category_1']['q4']['#value'];
+    $q5 = $form['elements']['category_1']['q5']['#value'];
+    $q6 = $form['elements']['category_1']['q6']['#value'];
+    $q7 = $form['elements']['category_1']['q7']['#value'];
+    
+    // values of category 2
+    $q8 = $form['elements']['category_2']['q8']['#value'];
+    $q9 = $form['elements']['category_2']['q9']['#value'];
+    $q10 = $form['elements']['category_2']['q10']['#value'];
+    $q11 = $form['elements']['category_2']['q11']['#value'];
+    $q12 = $form['elements']['category_2']['q12']['#value'];
+    $q13 = $form['elements']['category_2']['q13']['#value'];
+    $q14 = $form['elements']['category_2']['q14']['#value'];
+
+    // values of category 3
+    $q15 = $form['elements']['category_3']['q15']['#value'];
+    $q16 = $form['elements']['category_3']['q16']['#value'];
+    $q17 = $form['elements']['category_3']['q17']['#value'];
+    $q18 = $form['elements']['category_3']['q18']['#value'];
+    $q19 = $form['elements']['category_3']['q19']['#value'];
+    $q20 = $form['elements']['category_3']['q20']['#value'];
+    $q21 = $form['elements']['category_3']['q21']['#value'];
+
+    // values of category 4
+    $q22 = $form['elements']['category_4']['q22']['#value'];
+    $q23 = $form['elements']['category_4']['q23']['#value'];
+    $q24 = $form['elements']['category_4']['q24']['#value'];
+    $q25 = $form['elements']['category_4']['q25']['#value'];
+    $q26 = $form['elements']['category_4']['q26']['#value'];
+    $q27 = $form['elements']['category_4']['q27']['#value'];
+    $q28 = $form['elements']['category_4']['q28']['#value'];
+    
+    $sum = $q1 + $q2 + $q3 + $q4 + $q5 + $q6 + $q7 + $q8 + $q9 + $q10 + $q11 + $q12 + $q13 + $q14 + $q15 + $q16 + $q17 + $q18 + $q19 + $q20
+          + $q21 + $q22 + $q23 + $q24 + $q25 + $q26 + $q27 + $q28;
+
+    if($sum < 23)
+    {
+        $url = Url::fromUri("internal:/questionner/result/good");    
+        $form_state->setRedirectUrl($url);
+    }
+    else{
+        $url = Url::fromUri("internal:/questionner/result/consultant");    
+        $form_state->setRedirectUrl($url);
+    }
+}
+
+
