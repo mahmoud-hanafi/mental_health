@@ -1,0 +1,19 @@
+uuid: 07ed43d1-6594-4157-9c85-5ac6633ea47c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.disorder
+id: node.disorder.field_summary
+field_name: field_summary
+entity_type: node
+bundle: disorder
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,33 @@
+uuid: da4a9751-71de-46aa-9798-5482ca253571
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_subspecialties
+field_name: field_subspecialties
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Addiction
+    -
+      value: '2'
+      label: 'General Psychiatry'
+    -
+      value: '3'
+      label: 'Geriatric Psychiatry'
+    -
+      value: '4'
+      label: 'Child and adolescents'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

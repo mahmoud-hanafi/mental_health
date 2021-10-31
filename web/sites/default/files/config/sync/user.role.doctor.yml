@@ -1,0 +1,9 @@
+uuid: 2210476c-a562-4d40-a69c-6ab229b5de44
+langcode: en
+status: true
+dependencies: {  }
+id: doctor
+label: Doctor
+weight: 4
+is_admin: null
+permissions: {  }

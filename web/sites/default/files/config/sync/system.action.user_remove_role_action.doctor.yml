@@ -1,0 +1,14 @@
+uuid: 9cfc3a0e-5ec2-4d9e-9ca8-30925bf219b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.doctor
+  module:
+    - user
+id: user_remove_role_action.doctor
+label: 'Remove the Doctor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: doctor

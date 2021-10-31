@@ -1,0 +1,33 @@
+uuid: 5c194ad5-b0b1-4437-95a6-705f416e700f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hospital_map
+  module:
+    - node
+    - views
+  theme:
+    - bootstrap
+id: views_block__hospital_map_block_1
+theme: bootstrap
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:hospital_map-block_1'
+settings:
+  id: 'views_block:hospital_map-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      hospital: hospital
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

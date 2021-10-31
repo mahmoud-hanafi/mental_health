@@ -1,0 +1,21 @@
+uuid: 9724f0d9-e2b0-444f-9f45-b013758b64ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.disorder
+  module:
+    - text
+id: node.disorder.field_description
+field_name: field_description
+entity_type: node
+bundle: disorder
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

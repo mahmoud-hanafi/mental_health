@@ -1,0 +1,38 @@
+uuid: 35b26196-a879-467d-9431-17662cb25729
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_picture
+    - profile.type.doctor_profile
+  module:
+    - image
+id: profile.doctor_profile.field_picture
+field_name: field_picture
+entity_type: profile
+bundle: doctor_profile
+label: Picture
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 9cf3f26b-7202-43cc-99cf-8b317c70babb
+    alt: Default
+    title: ''
+    width: 1600
+    height: 1600
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

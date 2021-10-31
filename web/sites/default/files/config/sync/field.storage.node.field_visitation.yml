@@ -1,0 +1,19 @@
+uuid: 74eaa136-3e2a-4b28-832c-836a65522d55
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_visitation
+field_name: field_visitation
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

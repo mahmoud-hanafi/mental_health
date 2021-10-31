@@ -1,0 +1,21 @@
+uuid: 78555be2-4175-436a-b3fe-fd458fc56f10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_work_clinical_experience
+    - profile.type.doctor_profile
+  module:
+    - text
+id: profile.doctor_profile.field_work_clinical_experience
+field_name: field_work_clinical_experience
+entity_type: profile
+bundle: doctor_profile
+label: 'Work & Clinical Experience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

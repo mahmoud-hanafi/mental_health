@@ -1,0 +1,31 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: انتقاء
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      fields:
+        type:
+          label: 'نوع المحتوى'
+          separator: ', '
+        status:
+          label: الحالة
+        operations:
+          label: عمليات
+      filters:
+        type:
+          expose:
+            label: 'نوع المحتوى'
+        status:
+          expose:
+            label: الحالة
+        langcode:
+          expose:
+            label: اللغة
+    display_title: الافتراضي
+  page_1:
+    display_title: الصفحة

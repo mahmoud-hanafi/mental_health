@@ -1,0 +1,33 @@
+uuid: 1a4664df-3168-4242-8abf-d7ad9271450a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hospital_address_conatct_us
+  module:
+    - node
+    - views
+  theme:
+    - bootstrap
+id: views_block__hospital_address_conatct_us_block_1
+theme: bootstrap
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'views_block:hospital_address_conatct_us-block_1'
+settings:
+  id: 'views_block:hospital_address_conatct_us-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      hospital: hospital
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

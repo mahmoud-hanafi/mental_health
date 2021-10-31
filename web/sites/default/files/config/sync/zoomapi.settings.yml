@@ -1,0 +1,6 @@
+base_uri: 'https://api.zoom.us/v2'
+api_key: zoom_api_key
+api_secret: zoom_api_secret
+webhook_verification_token: ''
+_core:
+  default_config_hash: lAAtgEK9mybjDejBTstsMz2FBKuhhh_-fHIhmQfGtvA

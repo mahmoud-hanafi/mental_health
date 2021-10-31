@@ -1,0 +1,22 @@
+uuid: 909d662d-e536-4888-b20a-68cb98d064f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mental
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: mental_help
+theme: mental
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

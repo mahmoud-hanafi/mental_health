@@ -1,0 +1,14 @@
+uuid: 2fcc7719-757d-48bd-ab95-08d6e153304b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.patient
+  module:
+    - user
+id: user_remove_role_action.patient
+label: 'Remove the Patient role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: patient

@@ -1,0 +1,33 @@
+uuid: 410d0e97-54fd-4bf0-907e-f14ad8f36c90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_hospital
+    - node.type.hospital
+    - profile.type.doctor_profile
+  content:
+    - 'node:hospital:54593249-c9a3-4259-8ab8-6548e0190f1a'
+id: profile.doctor_profile.field_hospital
+field_name: field_hospital
+entity_type: profile
+bundle: doctor_profile
+label: Hospital
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 54593249-c9a3-4259-8ab8-6548e0190f1a
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      hospital: hospital
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

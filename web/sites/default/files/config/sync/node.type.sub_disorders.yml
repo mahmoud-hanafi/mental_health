@@ -1,0 +1,18 @@
+uuid: b3d6203e-db62-4d7c-8b51-2b48b17274e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Sub Disorders'
+type: sub_disorders
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

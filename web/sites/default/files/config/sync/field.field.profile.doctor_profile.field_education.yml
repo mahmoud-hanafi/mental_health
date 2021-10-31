@@ -1,0 +1,21 @@
+uuid: ec14ea2c-443f-4cc0-b84a-0d40a5009bfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_education
+    - profile.type.doctor_profile
+  module:
+    - text
+id: profile.doctor_profile.field_education
+field_name: field_education
+entity_type: profile
+bundle: doctor_profile
+label: Education
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,41 @@
+uuid: 94d2447e-f804-4751-896e-76a09f679a31
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hospital.body
+    - field.field.node.hospital.field_about_hospital
+    - field.field.node.hospital.field_contact_us
+    - field.field.node.hospital.field_general_external_clinics
+    - field.field.node.hospital.field_hospital_address
+    - field.field.node.hospital.field_hospital_image
+    - field.field.node.hospital.field_hospital_location
+    - field.field.node.hospital.field_other_services_
+    - field.field.node.hospital.field_special_external_clinics
+    - field.field.node.hospital.field_visitation
+    - node.type.hospital
+  module:
+    - user
+id: node.hospital.teaser
+targetEntityType: node
+bundle: hospital
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  field_about_hospital: true
+  field_contact_us: true
+  field_general_external_clinics: true
+  field_hospital_address: true
+  field_hospital_image: true
+  field_hospital_location: true
+  field_other_services_: true
+  field_special_external_clinics: true
+  field_visitation: true
+  langcode: true

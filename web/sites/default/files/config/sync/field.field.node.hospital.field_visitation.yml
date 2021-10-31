@@ -1,0 +1,21 @@
+uuid: dab1aec4-0c7c-4ec1-b72f-826d82ea4143
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visitation
+    - node.type.hospital
+  module:
+    - text
+id: node.hospital.field_visitation
+field_name: field_visitation
+entity_type: node
+bundle: hospital
+label: Visitation
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

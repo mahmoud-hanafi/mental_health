@@ -1,0 +1,21 @@
+uuid: c0dad7d2-a259-4197-b0ed-914abb71ae3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_area_of_experience
+    - profile.type.doctor_profile
+  module:
+    - text
+id: profile.doctor_profile.field_area_of_experience
+field_name: field_area_of_experience
+entity_type: profile
+bundle: doctor_profile
+label: 'Area of Experience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

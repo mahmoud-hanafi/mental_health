@@ -1,0 +1,20 @@
+uuid: ffaea860-8184-4fa9-896b-532d0659708e
+langcode: en
+status: false
+dependencies:
+  theme:
+    - mental
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: mental_page_title
+theme: mental
+region: header
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

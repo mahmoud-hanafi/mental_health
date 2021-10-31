@@ -1,0 +1,30 @@
+uuid: c33f7dce-5569-4aeb-a00d-ccb681700839
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f0bbb04e-24fb-4ed6-8f0c-422fbb5e07f9'
+  module:
+    - block_content
+    - system
+  theme:
+    - mental
+id: subspecialties
+theme: mental
+region: header
+weight: -5
+provider: null
+plugin: 'block_content:f0bbb04e-24fb-4ed6-8f0c-422fbb5e07f9'
+settings:
+  id: 'block_content:f0bbb04e-24fb-4ed6-8f0c-422fbb5e07f9'
+  label: Subspecialties
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

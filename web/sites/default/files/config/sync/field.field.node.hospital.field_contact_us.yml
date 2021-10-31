@@ -1,0 +1,21 @@
+uuid: ba78789b-7672-439b-92a5-2b6ea230d344
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_us
+    - node.type.hospital
+  module:
+    - text
+id: node.hospital.field_contact_us
+field_name: field_contact_us
+entity_type: node
+bundle: hospital
+label: 'Contact us'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

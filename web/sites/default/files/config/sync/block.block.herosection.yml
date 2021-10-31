@@ -1,0 +1,30 @@
+uuid: cdf6b5dc-7c35-4c47-9919-d9128b05ff0e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3c906f4b-dbd9-4168-b606-6e6bf22eb379'
+  module:
+    - block_content
+    - system
+  theme:
+    - mental
+id: herosection
+theme: mental
+region: header
+weight: -6
+provider: null
+plugin: 'block_content:3c906f4b-dbd9-4168-b606-6e6bf22eb379'
+settings:
+  id: 'block_content:3c906f4b-dbd9-4168-b606-6e6bf22eb379'
+  label: 'Hero Section'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

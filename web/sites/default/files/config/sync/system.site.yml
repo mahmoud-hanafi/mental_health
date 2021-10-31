@@ -1,0 +1,15 @@
+uuid: 4aff50ae-b13a-4ac7-993c-89d523740f21
+name: 'GENERAL SECRETARIATE'
+mail: hhanfy626@gmail.com
+slogan: 'FOR MENTAL HEALTH AND ADDICTION TREATMENT  '
+page:
+  403: ''
+  404: ''
+  front: /node/3
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: ''

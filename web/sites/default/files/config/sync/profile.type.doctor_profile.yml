@@ -1,0 +1,13 @@
+uuid: 376eb6e7-8a28-46e8-932c-053adfa8ccc4
+langcode: en
+status: true
+dependencies: {  }
+id: doctor_profile
+label: 'Doctor Profile'
+display_label: ''
+multiple: false
+registration: false
+roles:
+  doctor: doctor
+allow_revisions: false
+new_revision: false

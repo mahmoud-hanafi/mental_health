@@ -1,0 +1,19 @@
+uuid: 4cd9c0a1-b0fd-441e-a830-43ae272c304e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_full_name
+    - profile.type.doctor_profile
+id: profile.doctor_profile.field_full_name
+field_name: field_full_name
+entity_type: profile
+bundle: doctor_profile
+label: 'Full Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

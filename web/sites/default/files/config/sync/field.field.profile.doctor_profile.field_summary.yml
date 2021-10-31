@@ -1,0 +1,19 @@
+uuid: cd853ab0-0b4d-44b8-a277-2f73684ad557
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_summary
+    - profile.type.doctor_profile
+id: profile.doctor_profile.field_summary
+field_name: field_summary
+entity_type: profile
+bundle: doctor_profile
+label: Summary
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

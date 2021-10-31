@@ -1,0 +1,19 @@
+uuid: 99dc6bce-ef43-4360-83b2-ab8a0c871d39
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+    - text
+id: profile.field_objective
+field_name: field_objective
+entity_type: profile
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

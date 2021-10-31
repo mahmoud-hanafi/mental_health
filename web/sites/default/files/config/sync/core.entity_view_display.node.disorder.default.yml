@@ -1,0 +1,37 @@
+uuid: 5e474f14-bb1e-4ad7-8ef8-5b1f108417c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.disorder.field_description
+    - field.field.node.disorder.field_image
+    - field.field.node.disorder.field_subspecialties
+    - field.field.node.disorder.field_summary
+    - node.type.disorder
+  module:
+    - text
+    - user
+id: node.disorder.default
+targetEntityType: node
+bundle: disorder
+mode: default
+content:
+  field_description:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_summary:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  field_image: true
+  field_subspecialties: true
+  langcode: true
+  links: true

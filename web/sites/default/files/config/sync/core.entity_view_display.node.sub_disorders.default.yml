@@ -1,0 +1,38 @@
+uuid: 1bf96d3f-f3bf-4c8e-892d-010715d74283
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sub_disorders.body
+    - field.field.node.sub_disorders.field_disorders
+    - node.type.sub_disorders
+  module:
+    - text
+    - user
+id: node.sub_disorders.default
+targetEntityType: node
+bundle: sub_disorders
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_disorders:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

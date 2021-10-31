@@ -1,0 +1,19 @@
+uuid: 35927f6e-f359-4511-b9de-0bc0d1afe3ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+    - text
+id: profile.field_qualifications
+field_name: field_qualifications
+entity_type: profile
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

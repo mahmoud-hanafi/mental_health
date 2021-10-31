@@ -1,0 +1,23 @@
+uuid: 9677dda2-41d5-4cc2-9d0e-20396b45b1ab
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - mental
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: mental_search
+theme: mental
+region: sidebar_second
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

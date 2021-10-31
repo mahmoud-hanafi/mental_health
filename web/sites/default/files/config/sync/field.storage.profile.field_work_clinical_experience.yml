@@ -1,0 +1,19 @@
+uuid: efe67779-9c68-4cfc-845b-7213e16e166a
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+    - text
+id: profile.field_work_clinical_experience
+field_name: field_work_clinical_experience
+entity_type: profile
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

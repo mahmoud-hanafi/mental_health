@@ -1,0 +1,24 @@
+uuid: 6892e38a-ed0c-448a-b52a-6ee7101c9d7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  contact: true
+  langcode: true
+  language: true
+  timezone: true
+  translation: true

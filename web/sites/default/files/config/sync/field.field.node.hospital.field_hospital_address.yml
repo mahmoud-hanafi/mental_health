@@ -1,0 +1,21 @@
+uuid: 72d9624b-e5ed-4f39-a4d8-a8c365257038
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hospital_address
+    - node.type.hospital
+  module:
+    - text
+id: node.hospital.field_hospital_address
+field_name: field_hospital_address
+entity_type: node
+bundle: hospital
+label: 'Hospital Address'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 9b002f11-7d16-46bb-9967-189bd488a0e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subspecialties
+    - node.type.disorder
+  module:
+    - options
+id: node.disorder.field_subspecialties
+field_name: field_subspecialties
+entity_type: node
+bundle: disorder
+label: Subspecialties
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

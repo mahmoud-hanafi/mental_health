@@ -1,0 +1,22 @@
+uuid: f34cdc1e-4b26-4edd-a2da-ea21d173b4ee
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - mental
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: mental_powered
+theme: mental
+region: footer
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

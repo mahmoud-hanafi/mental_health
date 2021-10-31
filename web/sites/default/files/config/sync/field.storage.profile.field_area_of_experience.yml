@@ -1,0 +1,19 @@
+uuid: e9f91930-a79c-42f5-af4d-6705b4923f10
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+    - text
+id: profile.field_area_of_experience
+field_name: field_area_of_experience
+entity_type: profile
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

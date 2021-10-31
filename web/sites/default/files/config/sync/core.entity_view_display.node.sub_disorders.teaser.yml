@@ -1,0 +1,33 @@
+uuid: 8bd038db-ea76-40f2-804d-9186d4a81cba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sub_disorders.body
+    - field.field.node.sub_disorders.field_disorders
+    - node.type.sub_disorders
+  module:
+    - text
+    - user
+id: node.sub_disorders.teaser
+targetEntityType: node
+bundle: sub_disorders
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_disorders: true
+  langcode: true

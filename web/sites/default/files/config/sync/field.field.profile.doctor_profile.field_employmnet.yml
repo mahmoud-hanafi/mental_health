@@ -1,0 +1,21 @@
+uuid: b4ae7821-5089-441b-985a-6a44324854c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_employmnet
+    - profile.type.doctor_profile
+  module:
+    - text
+id: profile.doctor_profile.field_employmnet
+field_name: field_employmnet
+entity_type: profile
+bundle: doctor_profile
+label: Employmnet
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

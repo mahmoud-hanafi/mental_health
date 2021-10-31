@@ -1,0 +1,21 @@
+uuid: 1c9446d3-3f01-4079-aa08-f57e9cd9fcec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hospital_location
+    - node.type.hospital
+  module:
+    - text
+id: node.hospital.field_hospital_location
+field_name: field_hospital_location
+entity_type: node
+bundle: hospital
+label: 'Hospital location'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

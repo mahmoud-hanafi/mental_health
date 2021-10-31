@@ -1,0 +1,21 @@
+uuid: b394de3a-af08-408c-8eb2-5da380759a63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_hospital
+    - node.type.hospital
+  module:
+    - text
+id: node.hospital.field_about_hospital
+field_name: field_about_hospital
+entity_type: node
+bundle: hospital
+label: 'About Hospital'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

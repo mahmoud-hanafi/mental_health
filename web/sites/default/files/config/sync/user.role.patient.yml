@@ -1,0 +1,9 @@
+uuid: 29c12e45-d432-4b73-98ba-6c92b0932dff
+langcode: en
+status: true
+dependencies: {  }
+id: patient
+label: Patient
+weight: 3
+is_admin: null
+permissions: {  }

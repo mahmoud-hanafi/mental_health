@@ -1,0 +1,22 @@
+uuid: 482cd1cf-5940-4854-a974-b6ab0073915b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hospital
+id: node.hospital.promote
+field_name: promote
+entity_type: node
+bundle: hospital
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

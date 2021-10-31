@@ -1,0 +1,21 @@
+uuid: c0680121-2e56-4828-b1f3-a356a35fe80a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_date_of_birth
+    - profile.type.doctor_profile
+  module:
+    - datetime
+id: profile.doctor_profile.field_date_of_birth
+field_name: field_date_of_birth
+entity_type: profile
+bundle: doctor_profile
+label: 'Date of Birth'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

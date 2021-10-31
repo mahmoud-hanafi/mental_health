@@ -1,0 +1,18 @@
+uuid: 15cdb1a3-b579-46e4-a969-e48c949c0182
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hospital
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.hospital
+target_entity_type_id: node
+target_bundle: hospital
+default_langcode: site_default
+language_alterable: true

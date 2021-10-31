@@ -1,0 +1,21 @@
+uuid: 2b8c4496-e1b3-4862-bdec-7486c7d03be0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_working_hours
+    - profile.type.doctor_profile
+  module:
+    - datetime
+id: profile.doctor_profile.field_working_hours
+field_name: field_working_hours
+entity_type: profile
+bundle: doctor_profile
+label: 'Working hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,188 @@
+uuid: ee52b5b2-f92e-48ad-8a70-96f4904dd6a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.doctor_profile.field_area_of_experience
+    - field.field.profile.doctor_profile.field_date_of_birth
+    - field.field.profile.doctor_profile.field_doctor_specialty
+    - field.field.profile.doctor_profile.field_education
+    - field.field.profile.doctor_profile.field_email
+    - field.field.profile.doctor_profile.field_employmnet
+    - field.field.profile.doctor_profile.field_full_name
+    - field.field.profile.doctor_profile.field_hospital
+    - field.field.profile.doctor_profile.field_objective
+    - field.field.profile.doctor_profile.field_picture
+    - field.field.profile.doctor_profile.field_qualifications
+    - field.field.profile.doctor_profile.field_summary
+    - field.field.profile.doctor_profile.field_work_clinical_experience
+    - field.field.profile.doctor_profile.field_working_hours
+    - image.style.thumbnail
+    - profile.type.doctor_profile
+  module:
+    - datetime
+    - field_group
+    - image
+    - text
+third_party_settings:
+  field_group:
+    group_personal_informations:
+      children:
+        - field_picture
+        - field_full_name
+        - field_email
+        - field_age
+        - field_date_of_birth
+        - field_marital_status
+        - field_mobile_number
+        - field_education
+        - field_objective
+      parent_name: ''
+      weight: 1
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Personal Informations'
+    group_work_and_experience:
+      children:
+        - field_qualifications
+        - field_area_of_experience
+        - field_work_clinical_experience
+        - field_employmnet
+      parent_name: ''
+      weight: 2
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Work and Experience'
+id: profile.doctor_profile.default
+targetEntityType: profile
+bundle: doctor_profile
+mode: default
+content:
+  field_area_of_experience:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_date_of_birth:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_doctor_specialty:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_education:
+    weight: 11
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_email:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_employmnet:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_full_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hospital:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_objective:
+    weight: 12
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_picture:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_qualifications:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_summary:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_work_clinical_experience:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_working_hours:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden:
+  is_default: true

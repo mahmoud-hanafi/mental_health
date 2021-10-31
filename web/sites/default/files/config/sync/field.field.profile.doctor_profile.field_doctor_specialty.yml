@@ -1,0 +1,29 @@
+uuid: f3c37745-e0e2-4f0f-a5ed-6b93ebc93693
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_doctor_specialty
+    - node.type.disorder
+    - profile.type.doctor_profile
+id: profile.doctor_profile.field_doctor_specialty
+field_name: field_doctor_specialty
+entity_type: profile
+bundle: doctor_profile
+label: 'Doctor specialty'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      disorder: disorder
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

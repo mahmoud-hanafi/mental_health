@@ -1,0 +1,21 @@
+uuid: bd1feb3d-9f93-4f75-b552-ffce31eeb55b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_objective
+    - profile.type.doctor_profile
+  module:
+    - text
+id: profile.doctor_profile.field_objective
+field_name: field_objective
+entity_type: profile
+bundle: doctor_profile
+label: Objective
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

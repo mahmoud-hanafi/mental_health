@@ -1,0 +1,29 @@
+uuid: e3b1ab52-a7a8-416f-b1c3-340be1436e03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disorders
+    - node.type.disorder
+    - node.type.sub_disorders
+id: node.sub_disorders.field_disorders
+field_name: field_disorders
+entity_type: node
+bundle: sub_disorders
+label: Disorders
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      disorder: disorder
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: disorder
+field_type: entity_reference

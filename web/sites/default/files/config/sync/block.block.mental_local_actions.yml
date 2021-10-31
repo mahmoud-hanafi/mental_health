@@ -1,0 +1,20 @@
+uuid: a98da562-99b2-4374-a67f-14493f0254a7
+langcode: en
+status: false
+dependencies:
+  theme:
+    - mental
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: mental_local_actions
+theme: mental
+region: header
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

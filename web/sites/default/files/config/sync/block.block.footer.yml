@@ -1,0 +1,25 @@
+uuid: df650408-e085-4a74-be72-ff838a739af5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:57817758-7fe7-440c-836c-55c1250b7487'
+  module:
+    - block_content
+  theme:
+    - mental
+id: footer
+theme: mental
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:57817758-7fe7-440c-836c-55c1250b7487'
+settings:
+  id: 'block_content:57817758-7fe7-440c-836c-55c1250b7487'
+  label: footer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

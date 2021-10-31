@@ -1,0 +1,19 @@
+uuid: 4cbb9ed9-4339-4eb4-9604-361b48b511eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_other_services_
+field_name: field_other_services_
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

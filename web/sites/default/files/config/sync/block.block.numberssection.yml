@@ -1,0 +1,30 @@
+uuid: 985665ff-d581-40ae-8f26-f8c30703e459
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:beefdf4a-85af-44a2-8ad5-308045dcd083'
+  module:
+    - block_content
+    - system
+  theme:
+    - mental
+id: numberssection
+theme: mental
+region: header
+weight: -4
+provider: null
+plugin: 'block_content:beefdf4a-85af-44a2-8ad5-308045dcd083'
+settings:
+  id: 'block_content:beefdf4a-85af-44a2-8ad5-308045dcd083'
+  label: 'Numbers Section'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

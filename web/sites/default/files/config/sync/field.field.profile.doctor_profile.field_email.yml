@@ -1,0 +1,19 @@
+uuid: ab7d3454-0635-440c-86e8-fcc3f197da7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_email
+    - profile.type.doctor_profile
+id: profile.doctor_profile.field_email
+field_name: field_email
+entity_type: profile
+bundle: doctor_profile
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

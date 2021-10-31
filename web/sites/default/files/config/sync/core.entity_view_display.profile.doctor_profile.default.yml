@@ -1,0 +1,138 @@
+uuid: 8bdf4d2b-4dc9-4be8-91d5-72b09027368a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.doctor_profile.field_area_of_experience
+    - field.field.profile.doctor_profile.field_date_of_birth
+    - field.field.profile.doctor_profile.field_doctor_specialty
+    - field.field.profile.doctor_profile.field_education
+    - field.field.profile.doctor_profile.field_email
+    - field.field.profile.doctor_profile.field_employmnet
+    - field.field.profile.doctor_profile.field_full_name
+    - field.field.profile.doctor_profile.field_hospital
+    - field.field.profile.doctor_profile.field_objective
+    - field.field.profile.doctor_profile.field_picture
+    - field.field.profile.doctor_profile.field_qualifications
+    - field.field.profile.doctor_profile.field_summary
+    - field.field.profile.doctor_profile.field_work_clinical_experience
+    - field.field.profile.doctor_profile.field_working_hours
+    - image.style.medium
+    - profile.type.doctor_profile
+  module:
+    - datetime
+    - image
+    - text
+id: profile.doctor_profile.default
+targetEntityType: profile
+bundle: doctor_profile
+mode: default
+content:
+  field_area_of_experience:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_date_of_birth:
+    weight: 6
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_doctor_specialty:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_education:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_email:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_employmnet:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_full_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_hospital:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_objective:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_picture:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_qualifications:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_summary:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_work_clinical_experience:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_working_hours:
+    weight: 4
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden: {  }
